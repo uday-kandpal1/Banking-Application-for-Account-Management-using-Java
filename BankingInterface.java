@@ -46,6 +46,7 @@ class Account {
         System.out.println("Phone Number: " + phoneNumber);
         System.out.println("-----------------------\n");
     }   
+    //updateContactDetails
     public void updateContactDetails(String email, String phoneNumber) {
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -77,6 +78,7 @@ public class BankingInterface {
         accountCount = 0;
         scanner = new Scanner(System.in);
     }   
+    //Create new Account
     public void createAccount() {
         if (accountCount >= accounts.length) {
             // The array can be resized if needed
@@ -228,6 +230,7 @@ public class BankingInterface {
             }
         }return null;
     }    
+    //Function for main menu
     public void mainMenu() {
         int choice = 0;        
         do {
@@ -275,4 +278,5 @@ public class BankingInterface {
         BankingInterface obj = new BankingInterface();
         obj.mainMenu();
     }
+
 }
